@@ -1,7 +1,3 @@
-
-
-
-
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 mv Miniconda3-latest-Linux-x86_64.sh miniconda3.sh
 chmod 777 miniconda3.sh

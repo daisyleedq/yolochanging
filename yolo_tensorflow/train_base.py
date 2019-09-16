@@ -152,4 +152,5 @@ def main():
 
 if __name__ == '__main__':
     # python train.py --weights YOLO_small.ckpt --gpu 0
+    os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
     main()

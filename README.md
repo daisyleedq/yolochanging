@@ -21,6 +21,19 @@ In this horovod test, base test is fixed with warm-up and good local and global 
 - stable 99%-100% GPU usage for 2 tests.
 
 #  Run 2 tests
+### 0. start the miniconda environment:
+conda info --envs
+```bash
+base                  *  /macierz/home/s170011/bin/miniconda3
+py27i                    /macierz/home/s170011/bin/miniconda3/envs/py27i
+py36tf                   /macierz/home/s170011/bin/miniconda3/envs/py36tf
+py36tfi                  /macierz/home/s170011/bin/miniconda3/envs/py36tfi
+```
+cd /macierz/home/s170011/bin/miniconda3/bin
+. activate py36tfi
+# Don't know why now the py36tf report errors
+conda list
+
 ### 1. Single machine training 
 bash run_single.sh --watch_gpu=0 [--watch-gpu should be the same as the visible gpu]
 ### 2. Distributed training  

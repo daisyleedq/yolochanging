@@ -174,11 +174,11 @@ def main():
         coord.join(threads)
     
     print('Done training.')
-    try:
-        proc.terminate()
-    except OSError:
-        pass
-        print("Kill subprocess failed. Kill nvidia-smi mannually")
+   # try:
+   #     proc.terminate()
+   # except OSError:
+   #     pass
+   #     print("Kill subprocess failed. Kill nvidia-smi mannually")
         
 if __name__ == '__main__':
     main()
